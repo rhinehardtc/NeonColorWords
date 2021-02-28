@@ -8,7 +8,7 @@ function App() {
   const colors = ['red', 'green', 'blue', 'yellow', 'orange', 'purple', 'cyan', 'magenta'];
   const selectRandomColor = () => { return colors[Math.floor(Math.random() * colors.length)] };
 
-  const style = {'color': hue}
+  const style = {'color': hue, 'text-shadow': `0 0 30px ${hue}`}
 
   return (
     <div 
