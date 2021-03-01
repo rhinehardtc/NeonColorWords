@@ -1,12 +1,13 @@
 .App {
-  background-color: #0c0d0f;
+  background-color: #070708;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: 5vmin;
+  font-size: 6vmin;
   cursor: none;
+  font-family: 'DotGothic16', sans-serif;
 }
 
 ::selection {
