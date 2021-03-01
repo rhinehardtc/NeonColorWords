@@ -14,7 +14,7 @@ function App() {
   //Styling used for the h1. It uses the hue set in state.
   const wordStyle = {'color': hue, 'text-shadow': `0 0 6vmin ${hue}`};
   //Styling used for the score counter
-  const scoreStyle = {'color': 'white', 'text-shadow': '0 0 4vmin white', 'margin-left': '2vw', 'align-self': 'flex-start'};
+  const scoreStyle = {'color': 'white', 'text-shadow': '0 0 4vmin white', 'margin': '0 0 15vh 2vw', 'align-self': 'flex-start'};
 
   // isMatch will increase the score if the hue and word are the same color, or else reset the score, and is used for onClick
   // isNotMatch does the same thing in reverse for onAuxClick
