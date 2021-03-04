@@ -1,7 +1,9 @@
 import React, {useState, useEffect} from 'react';
 import './App.css';
+import StartScreen from './StartScreen';
 
 function App() {
+  const [start, setStart] = useState(false); //Determines if game is started. Passed as props to StartScreen Component.
   const [word, setWord] = useState('white'); //For the word that is displayed
   const [hue, setHue] = useState('white'); //For the color of the displayed text
   const [score, setScore] = useState(0); //The score to be incremented upon successful matching or rejection of hue and word
@@ -27,6 +29,7 @@ function App() {
   };
 
   return (
+    start ?
     <div 
         className="App" 
         onClick={() => {
@@ -45,6 +48,8 @@ function App() {
       <h3 style={scoreStyle}>Score: {score}</h3>
       <h1 style={wordStyle}>{word}</h1>
     </div>
+    :
+    <StartScreen setStart={setStart}/>
   );
 }
 

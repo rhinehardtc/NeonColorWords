@@ -10,6 +10,14 @@
   font-family: 'DotGothic16', sans-serif;
 }
 
+.StartScreen {
+  justify-content: center;
+  color: white;
+  cursor: crosshair;
+  text-align: center;
+  text-shadow: 0 0 4vmin white;
+}
+
 ::selection {
   color: none;
   background: none;
