@@ -52,7 +52,7 @@ function App() {
           }
           onContextMenu={(e) => {e.preventDefault()}}
           >
-          <h3 style={scoreStyle}>Score: {score}</h3>
+          <h3 style={scoreStyle}>Repairs: {score}</h3>
           <h1 style={wordStyle}>{word}</h1>
         </div>
       )
