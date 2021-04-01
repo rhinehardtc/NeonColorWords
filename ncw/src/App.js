@@ -36,7 +36,12 @@ function App() {
   // function for randomly choosing whether to modify different visual properties
   const modify = () => {
     if(score > 10){
-      if(randomRoll(3)){
+      if(randomRoll(2)){
+        setHue("black");
+      };
+    };
+    if(score > 20){
+      if(randomRoll(6)){
         setBackgroundColor(selectRandomColor());
       };
     };
@@ -44,7 +49,7 @@ function App() {
 
   // function used to return boolean based on target being compared to a random number between 1 and 10
   const randomRoll = (target) => {
-    return Math.floor(Math.random() * 10) <= target ? true : false;
+    return Math.floor(Math.random() * 20) <= target ? true : false;
   };
 
   //Decides whether to render the start screen, end screen, or main game interface based on start and end state boolean values.
