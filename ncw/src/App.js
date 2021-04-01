@@ -8,7 +8,7 @@ function App() {
   const [end, setEnd] = useState(false); //Determines if game is ended. Passed as props to StartScreen & EndScreen Components.
   const [word, setWord] = useState('white'); //For the word that is displayed
   const [hue, setHue] = useState('white'); //For the color of the displayed text
-  const [backgroundColor, setBackgroundColor] = useState('#070708');
+  const [backgroundColor, setBackgroundColor] = useState('#070708'); //For background color change, which should only take place after the score in modify()
   const [score, setScore] = useState(0); //The score to be incremented upon successful matching or rejection of hue and word
 
   //List of colors to be randomly selected for both hue and word in the selectRandomColor function
@@ -33,6 +33,7 @@ function App() {
     else {setStart(false); setEnd(true)};
   };
 
+  // function for randomly choosing whether to modify different visual properties
   const modify = () => {
     if(score > 10){
       if(randomRoll(3)){
@@ -41,6 +42,7 @@ function App() {
     };
   };
 
+  // function used to return boolean based on target being compared to a random number between 1 and 10
   const randomRoll = (target) => {
     return Math.floor(Math.random() * 10) <= target ? true : false;
   };
