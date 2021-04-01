@@ -17,7 +17,7 @@ function App() {
   const selectRandomColor = () => { return colors[Math.floor(Math.random() * colors.length)] };
 
   //Styling used for the h1. It uses the hue set in state.
-  const wordStyle = {'color': hue, 'text-shadow': `0 0 6vmin ${hue}`, fontSize: "14vmin","-webkit-text-stroke": "0.5px black"};
+  const wordStyle = {'color': hue, 'text-shadow': `0 0 6vmin ${hue}`, fontSize: "14vmin", "-webkit-text-stroke": "0.5px #070708"};
   //Styling used for the score counter
   const scoreStyle = {'color': 'white', 'text-shadow': '0 0 4vmin white', 'margin': '0 0 15vh 2vw', 'align-self': 'flex-start'};
 
